@@ -6,7 +6,7 @@ import { homedir } from 'os';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Determine backup directory based on environment
+// Determine backup directory based on environment.
 function getBackupDir() {
   if (process.versions.electron) {
     // In Electron app - use user data directory
