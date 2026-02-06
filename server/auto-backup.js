@@ -17,7 +17,8 @@ function getBackupDir() {
   }
 }
 
-// Get database path
+// Get database path.
+
 function getDbPath() {
   if (process.versions.electron) {
     return join(homedir(), 'Library', 'Application Support', 'vocabmaster', 'db.json');
